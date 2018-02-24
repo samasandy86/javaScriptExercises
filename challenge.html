@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="target"></p>
+    <script>
+
+        const p1 = prompt('Player1! Rock, paper or scissor?');
+        const p2 = prompt('Player 2! Rock, paper or scissor?');
+
+        if(p1.toLowerCase() === 'rock' && p2.toLowerCase() === 'paper') {
+            document.querySelector('#target').innerHTML = 'P2 wins!'
+
+        } else if(p1.toLowerCase() === 'rock' && p2.toLowerCase() === 'scissor' ) {
+            document.querySelector('#target').innerHTML = 'P1 wins!'
+
+        } else if(p1.toLowerCase() === 'scissor' && p2.toLowerCase() === 'rock' ) {
+            document.querySelector('#target').innerHTML = 'P2 wins!'
+
+        } else if(p1.toLowerCase() === 'scissor' && p2.toLowerCase() === 'paper' ) {
+            document.querySelector('#target').innerHTML = 'P1 wins!'
+
+        } else if(p1.toLowerCase() === 'paper' && p2.toLowerCase() === 'rock' ) {
+            document.querySelector('#target').innerHTML = 'P2 wins!'
+
+        } else if(p1.toLowerCase() === 'paper' && p2.toLowerCase() === 'scissor' ) {
+            document.querySelector('#target').innerHTML = 'P2 wins!'
+
+        } else if(p1.toLowerCase() === p2.toLowerCase()){
+            document.querySelector('#target').innerHTML = 'Draw!! Try Again'
+
+        } else {
+            document.querySelector('#target').innerHTML = "You can't do that cheater!"
+        }
+
+
+
+//document.querySelector('#target').innerHTML = 'Hey guys!'
+
+        // const studentArray = [paper, scissor, rock];
+        // let response = prompt('')
+
+    </script>
+</body>
+</html>
